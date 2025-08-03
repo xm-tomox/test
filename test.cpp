@@ -10,7 +10,7 @@ unique_ptr<std::string> createString(const char str[]) {
 
 int main() {
     unique_ptr<string> ptr;
-    ptr = createString("ABCDEFG");
+    ptr = createString("123 ABCDEFG");
     cout << *ptr << endl;
     
     return 0;
