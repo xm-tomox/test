@@ -2,13 +2,16 @@
 #include <string>
 #include <memory>
 
-std::unique_ptr<std::string> createString(const char str[]) {
+using namespace std;
+
+unique_ptr<std::string> createString(const char str[]) {
     return std::make_unique<std::string>(str);
 }
 
 int main() {
-    std::unique_ptr<std::string> ptr;
+    unique_ptr<string> ptr;
     ptr = createString("ABCDEFG");
-    std::cout << *ptr << std::endl;
+    cout << *ptr << endl;
+    
     return 0;
 }
